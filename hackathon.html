@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Container Click Example</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home">Home</li>
+            <li id="about">About</li>
+            <li id="contact">Contact</li>
+        </ul>
+    </nav>
+
+    <button id="Scan">Scan</button>
+
+    <div class="container" id="blackContainer" onclick="toggleContent('blackContainer')">
+        <h2>Landfill</h2>
+        <div class="content" id="blackContent">Content for Black Container</div>
+    </div>
+
+    <div class="container" id="greenContainer" onclick="toggleContent('greenContainer')">
+        <h2>Compost</h2>
+        <div class="content" id="greenContent">Content for Green Container</div>
+    </div>
+
+    <div class="container" id="blueContainer" onclick="toggleContent('blueContainer')">
+        <h2>Recycling</h2>
+        <div class="content" id="blueContent">Content for Blue Container</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
