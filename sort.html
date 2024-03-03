@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App View</title>
+  <link rel="stylesheet" href="CSS/sort.css">
+</head>
+
+<body>
+
+    <header>
+        EcoSort
+    </header>
+
+
+        <h2>Item Sorting</h2>
+      
+        <label for="items">Select an item:</label>
+        <select id="items">
+          <option value="plastic">Plastic</option>
+          <option value="organic">Organic Waste</option>
+          <option value="paper">Paper</option>
+          <!-- Add more options as needed -->
+        </select>
+      
+        <button onclick="sortItem()">Sort Item</button>
+      
+        <div id="bins" class="bins-container">
+          <div id="landfill" class="bin" data-items="Landfill"></div>
+          <div id="compost" class="bin" data-items="Compost"></div>
+          <div id="recycling" class="bin" data-items="Recycling"></div>
+        </div>
+
+        <script src="sort.js"></script>
+</body>
+</html>
