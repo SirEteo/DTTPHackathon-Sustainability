@@ -14,7 +14,7 @@ body {
 
 button {
     display: block;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -45,25 +45,34 @@ button {
 }
 
 h2 {
-    color:azure
+    margin: auto;
+    color:azure   
 }
+
 .content {
     display: none;
     padding: 20px;
     color: white;
 }
 
-.icon-container {
+footer a i {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 24px;
 }
 
 footer a {
-    background-color: #CF8E2A;
+    background-color: #5c3f14;
     text-align: center;
-    padding: 10px;
     color: #fff;
+    padding: 10px;
     border-radius: 10px;
+    margin-right: 50px;
+}
+
+footer {
+    background-color: #CF8E2A;
+    width: 100%;
+    padding: 10px;
 }
