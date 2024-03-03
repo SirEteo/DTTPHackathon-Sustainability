@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash Sorting System</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1>EcoSort</h1>
+</head>
+<body>
+  <div class="bins">
+    <div id="RecyclingBin" class="bin" ondrop="drop(event, 'Recycling')" ondragover="allowDrop(event)"></div>
+    <div id="CompostBin" class="bin" ondrop="drop(event, 'Compost')" ondragover="allowDrop(event)"></div>
+    <div id="LandfillBin" class="bin" ondrop="drop(event, 'Landfill')" ondragover="allowDrop(event)"></div>
+  </div>
+  
+  <div class="trash">
+    <div id="Recycling" class="item" draggable="true" ondragstart="drag(event)">Recycling</div>
+    <div id="Compost" class="item" draggable="true" ondragstart="drag(event)">Compost</div>
+    <div id="Landfill" class="item" draggable="true" ondragstart="drag(event)">Landfill</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
